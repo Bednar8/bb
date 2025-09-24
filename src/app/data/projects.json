@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Project 1",
+    "description": "Description of Project 1",
+    "image": "/assets/baner.jpg",
+    "link": "https://www.project1.com",
+    "slug": "project-1"
+  },
+  {
+    "name": "Project 2",
+    "description": "Description of Project 2",
+    "image": "/assets/baner.jpg",
+    "link": "https://www.project2.com",
+    "slug": "project-2"
+  }
+]
