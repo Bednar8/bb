@@ -20,17 +20,27 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   }
 
   return (
-    <div className="max-w-4xl mx-auto px-6 py-20">
-      <h1 className="text-4xl font-bold mb-4">{project.name}</h1>
-      <div className="relative w-full h-64 mb-6">
-        <Image
-          src={project.image}
-          alt={project.name}
-          fill
-          className="object-cover"
-        />
+    <div className="mx-auto my-16 max-w-5xl px-6">
+      <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+        <div className="overflow-hidden rounded-xl border border-neutral-200 bg-white shadow-sm dark:border-neutral-800 dark:bg-neutral-900">
+          <div className="relative h-64 w-full sm:h-80 md:h-96">
+            <Image
+              src={project.image}
+              alt={project.name}
+              fill
+              className="object-cover"
+            />
+          </div>
+        </div>
+        <div className="rounded-xl border border-neutral-200 bg-white p-6 shadow-sm dark:border-neutral-800 dark:bg-neutral-900">
+          <h1 className="mb-4 text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+            {project.name}
+          </h1>
+          <p className="text-base leading-7 text-neutral-700 dark:text-neutral-300">
+            {project.description}
+          </p>
+        </div>
       </div>
-      <p className="text-lg">{project.description}</p>
     </div>
   );
 }
