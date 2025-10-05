@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import Link from "next/link"
 import {useState} from "react"
 
@@ -52,13 +53,27 @@ export default function Menu() {
 		setIsMenuOpen(!isMenuOpen)
 	}
 	return (
-		<nav className="flex items-center gap-4">
+		<nav className="flex items-center gap-4 text-xs">
 			<div className="md:hidden" onClick={toggleMenu}>
-				☰ Burger
+				{isMenuOpen ? (
+					<Image
+						src="/assets/icons/close.svg"
+						alt="Close menu"
+						width={24}
+						height={24}
+					/>
+				) : (
+					"☰"
+				)}
 			</div>
 			<div className="hidden md:block space-x-4 uppercase">
 				{menuItems.map((item) => (
-					<Link href={item.href} key={item.label}>
+					<Link
+						href={item.href}
+						key={item.label}
+						{...(item.href === "/contact" && {
+							className: "border rounded-3xl py-3 px-6 border-light-gray",
+						})}>
 						{item.label}
 					</Link>
 				))}
@@ -67,8 +82,8 @@ export default function Menu() {
 			<div
 				className={`md:hidden absolute top-[80px] transition-all duration-300 ${
 					isMenuOpen ? "right-[0%]" : "right-[-110%]"
-				} w-full h-[calc(100vh-80px)] bg-dark text-light-gray flex flex-col justify-between py-10 px-5 uppercase`}>
-				<div className="flex flex-col gap-9">
+				} w-full h-[calc(100dvh-80px)] bg-dark text-light-gray flex flex-col justify-between py-10 px-5 uppercase`}>
+				<div className="flex flex-col gap-9 text-base">
 					{menuItems.map((item) => (
 						<div
 							key={item.label}

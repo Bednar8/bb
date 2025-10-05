@@ -17,6 +17,7 @@
 	--color-primary: #171717;
 	--color-dark: #0e0e0e;
 	--color-light-gray: #d2cfcf;
+	--text-xs: 0.8125rem;
 }
 
 body {
