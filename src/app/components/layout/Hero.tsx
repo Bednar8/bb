@@ -17,6 +17,7 @@ export default function Hero() {
           alt=""
           width={1200}
           height={600}
+          quality={100}
           className="hidden lg:block absolute top-[-50px] right-[-500px]"
         />
         <div className="mx-auto  mt-[150px] lg:mt-0 lg:mx-0 lg:w-1/2">
