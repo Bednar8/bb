@@ -1,6 +1,16 @@
 import Image from "next/image";
 
-export default function Project({ project }: { project: any }) {
+type Project = {
+  name: string;
+  description: string;
+  image: string;
+  link: string;
+  slug: string;
+  type: string;
+  tags: string[];
+};
+
+export default function Project({ project }: { project: Project }) {
   return (
     <div className="mt-14">
       <div className="flex flex-col gap-4 lg:flex-row flex-wrap justify-between">

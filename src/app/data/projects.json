@@ -14,6 +14,7 @@
     "image": "/assets/baner.jpg",
     "link": "https://www.project2.com",
     "slug": "project-2",
+    "type": "Business website",
     "tags": ["React", "Next.js", "Tailwind", "TypeScript"]
   }
 ]
