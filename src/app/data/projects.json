@@ -1,16 +1,19 @@
 [
   {
-    "name": "Project 1",
+    "name": "Huzaro",
     "description": "Description of Project 1",
     "image": "/assets/baner.jpg",
     "link": "https://www.project1.com",
-    "slug": "project-1"
+    "slug": "project-1",
+    "type": "Shopify e-commerce",
+    "tags": ["6-weeks", "70+ views", "9 languages"]
   },
   {
-    "name": "Project 2",
+    "name": "Markadler",
     "description": "Description of Project 2",
     "image": "/assets/baner.jpg",
     "link": "https://www.project2.com",
-    "slug": "project-2"
+    "slug": "project-2",
+    "tags": ["React", "Next.js", "Tailwind", "TypeScript"]
   }
 ]
