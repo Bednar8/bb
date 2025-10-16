@@ -5,7 +5,7 @@ import HeroStatistics from "../ui/HeroStatistics";
 
 export default function Hero() {
   return (
-    <div className="bg-[linear-gradient(to_bottom,#0e0e0e_0%,#1b0f1f_60%,#2c2230_100%)] text-light-gray py-11 relative overflow-hidden lg:pb-0 lg:h-[700px]">
+    <div className="bg-[linear-gradient(to_bottom,#0e0e0e_0%,#1b0f1f_60%,#2c2230_100%)] text-light-gray py-11 relative overflow-hidden lg:pb-0 lg:h-[600px]">
       <div className="lg:relative container h-full">
         <Image
           src="/assets/shapes/baner_shape_mobile.png"
@@ -17,7 +17,7 @@ export default function Hero() {
         <Image
           src="/assets/shapes/baner_shape_desktop.png"
           alt=""
-          width={1400}
+          width={1250}
           height={600}
           quality={100}
           className="hidden lg:block absolute bottom-0 right-[-500px]"

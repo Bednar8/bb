@@ -15,22 +15,15 @@ const statistics = [
 
 export default function HeroStatistics() {
   return (
-    <div className="flex">
-      <div className="flex items-center gap-4 w-fit flex-shrink-0">
-        {statistics.map((stat, i) => (
-          <div key={stat.label} className="w-max flex items-center gap-4">
-            <p className="flex items-center gap-2">
-              <span className="text-white font-bold text-2xl">
-                {stat.value}
-              </span>
-              <span>{stat.label}</span>
-            </p>
-            {i !== statistics.length - 1 && (
-              <span className="h-[12px] w-[1px] block bg-light-gray"></span>
-            )}
-          </div>
-        ))}
-      </div>
+    <div className="flex items-center flex-wrap gap-4 w-fit">
+      {statistics.map((stat, i) => (
+        <div key={stat.label} className="w-max flex items-center gap-4">
+          <p className="flex items-center gap-2">
+            <span className="text-white font-bold text-2xl">{stat.value}</span>
+            <span>{stat.label}</span>
+          </p>
+        </div>
+      ))}
     </div>
   );
 }
