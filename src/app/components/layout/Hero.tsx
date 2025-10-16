@@ -6,7 +6,7 @@ import HeroStatistics from "../ui/HeroStatistics";
 export default function Hero() {
   return (
     <div
-      className="bg-[linear-gradient(to_bottom,#0e0e0e_0%,#1b0f1f_60%,#2c2230_100%)] text-light-gray py-11 relative overflow-hidden lg:pb-0 lg:h-[600px] lg:bg-[linear-gradient(164deg,#0e0e0e_48.02%,#9d85a4_95.2%)]
+      className="bg-[linear-gradient(to_bottom,#0e0e0e_0%,#1b0f1f_60%,#2c2230_100%)] text-light-gray py-11 relative overflow-hidden lg:pb-0 lg:h-[550px] lg:bg-[linear-gradient(164deg,#0e0e0e_48.02%,#9d85a4_95.2%)]
 "
     >
       <div className="lg:relative container h-full">
@@ -20,10 +20,10 @@ export default function Hero() {
         <Image
           src="/assets/shapes/baner_shape_desktop.png"
           alt=""
-          width={1250}
+          width={1150}
           height={600}
           quality={100}
-          className="hidden lg:block absolute bottom-0 right-[-500px]"
+          className="hidden lg:block absolute bottom-0 right-[-430px]"
         />
         <div className="mx-auto  mt-[150px] lg:mt-0 lg:mx-0 lg:w-1/2">
           <DiscountBadge />
