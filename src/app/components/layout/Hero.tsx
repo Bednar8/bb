@@ -5,7 +5,10 @@ import HeroStatistics from "../ui/HeroStatistics";
 
 export default function Hero() {
   return (
-    <div className="bg-[linear-gradient(to_bottom,#0e0e0e_0%,#1b0f1f_60%,#2c2230_100%)] text-light-gray py-11 relative overflow-hidden lg:pb-0 lg:h-[600px]">
+    <div
+      className="bg-[linear-gradient(to_bottom,#0e0e0e_0%,#1b0f1f_60%,#2c2230_100%)] text-light-gray py-11 relative overflow-hidden lg:pb-0 lg:h-[600px] lg:bg-[linear-gradient(164deg,#0e0e0e_48.02%,#9d85a4_95.2%)]
+"
+    >
       <div className="lg:relative container h-full">
         <Image
           src="/assets/shapes/baner_shape_mobile.png"
