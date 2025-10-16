@@ -99,35 +99,15 @@ body {
     transition-delay: 2s;
   }
 
-  .menu-link-animate:not(.active)::after {
-    transition-delay: 0s;
-  }
-
-  .menu-link-animate:not(.active):nth-child(2)::after {
-    transition-delay: 0s;
-  }
-  .menu-link-animate:not(.active):nth-child(3)::after {
-    transition-delay: 0s;
-  }
-  .menu-link-animate:not(.active):nth-child(4)::after {
-    transition-delay: 0s;
-  }
-  .menu-link-animate:not(.active):nth-child(5)::after {
-    transition-delay: 0s;
-  }
-
-  .social-link-animate:not(.active) {
-    transition-delay: 0s;
-  }
-  .social-link-animate:not(.active):nth-child(2) {
-    transition-delay: 0s;
-  }
-  .social-link-animate:not(.active):nth-child(3) {
-    transition-delay: 0s;
-  }
-  .social-link-animate:not(.active):nth-child(4) {
-    transition-delay: 0s;
-  }
+  .menu-link-animate:not(.active)::after,
+  .menu-link-animate:not(.active):nth-child(2)::after,
+  .menu-link-animate:not(.active):nth-child(3)::after,
+  .menu-link-animate:not(.active):nth-child(4)::after,
+  .menu-link-animate:not(.active):nth-child(5)::after,
+  .social-link-animate:not(.active),
+  .social-link-animate:not(.active):nth-child(2),
+  .social-link-animate:not(.active):nth-child(3),
+  .social-link-animate:not(.active):nth-child(4),
   .social-link-animate:not(.active):nth-child(5) {
     transition-delay: 0s;
   }
