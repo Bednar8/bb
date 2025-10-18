@@ -22,7 +22,7 @@
 
 @media (min-width: 1024px) {
 	.container {
-		padding: 0 50px;
+		padding-inline: 50px;
 	}
 }
 
