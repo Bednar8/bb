@@ -40,7 +40,7 @@ export default function Form() {
 			})
 			const data = await res.json()
 			if (data.status === "success") {
-				setStatusMessage("Success")
+				setStatusMessage(data.message)
 			} else {
 				setStatusMessage("Error")
 			}
@@ -87,6 +87,9 @@ export default function Form() {
 						<p>Prefer email?</p>
 						<a href="#">hello@bbai.com</a>
 					</div>
+					{statusMessage && (
+						<p className="mt-4 text-center text-sm">{statusMessage}</p>
+					)}
 				</div>
 
 				<Image
@@ -103,9 +106,6 @@ export default function Form() {
 					height={400}
 					className="absolute bottom-0 left-[-300px]  max-w-[unset] hidden lg:block"
 				/>
-				{statusMessage && (
-					<p className="mt-4 text-center text-sm">{statusMessage}</p>
-				)}
 			</div>
 		</div>
 	)
