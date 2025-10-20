@@ -13,10 +13,9 @@ type Project = {
 export default function Project({project}: {project: Project}) {
 	return (
 		<div className="border-t-[1px] py-5 border-[#E5E5E5]">
-			<div className="flex flex-col gap-5 lg:flex-row flex-wrap justify-between items-center">
+			<div className="flex flex-col gap-5 lg:flex-row flex-wrap justify-between lg:items-center">
 				<h4 className="text-base uppercase">{project.name}</h4>
 				<Image
-					//   src={project.image}
 					src="/assets/shapes/no-img.png"
 					alt={project.name}
 					width={1500}

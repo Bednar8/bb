@@ -14,12 +14,29 @@ const inputs = [
 		type: "email",
 		placeholder: "Email",
 	},
+	{
+		name: "budget",
+		type: "budget",
+		placeholder: "Project budget",
+	},
+	{
+		name: "from",
+		type: "from",
+		placeholder: "Where did you hear about us?",
+	},
+	{
+		name: "about",
+		type: "about",
+		placeholder: "Your project is about",
+	},
 ]
 
 export default function Form() {
 	const [formData, setFormData] = useState({
 		name: "",
 		email: "",
+		budget: "",
+		from: "",
 	})
 	const [statusMessage, setStatusMessage] = useState("")
 
@@ -65,19 +82,25 @@ export default function Form() {
 				</div>
 				<div className="lg:w-1/2 lg:border border-light-gray lg:px-14 lg:py-8 lg:rounded-3xl">
 					<form onSubmit={handleSubmit} className="">
-						<div className="space-y-5">
-							{inputs.map((input) => (
-								<div key={input.name} className="flex flex-col">
-									<input
-										className="border-b-1 border-[#797979] pb-3.5"
-										placeholder={input.placeholder}
-										type={input.type}
-										name={input.name}
-										id={input.name}
-										onChange={handleChange}
-									/>
-								</div>
-							))}
+						<div>
+							<div className="flex flex-col lg:grid lg:grid-cols-2 gap-8">
+								{inputs.map((input, i) => (
+									<div
+										key={input.name}
+										className={`flex flex-col${
+											i === inputs.length - 1 ? " lg:col-span-2" : ""
+										}`}>
+										<input
+											className="border-b-1 border-[#797979] pb-3.5"
+											placeholder={input.placeholder}
+											type={input.type}
+											name={input.name}
+											id={input.name}
+											onChange={handleChange}
+										/>
+									</div>
+								))}
+							</div>
 							<div className="pt-2">
 								<input type="submit" className="" value="Send" />
 							</div>
