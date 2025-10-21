@@ -38,7 +38,7 @@ const footerItems2 = [
 
 export default function Footer() {
   return (
-    <footer className="bg-gray flex flex-col items-center justify-between pt-12 pb-9 text-sm lg:items-start">
+    <footer className="bg-light-gray flex flex-col items-center justify-between pt-12 pb-9 text-sm lg:items-start">
       <div className="container">
         <div className="flex flex-col  justify-start w-full text-center px-5 lg:flex-row lg:text-left lg:px-0 lg:gap-[180px]">
           <div>
