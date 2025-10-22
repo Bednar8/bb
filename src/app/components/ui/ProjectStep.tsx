@@ -9,7 +9,7 @@ export default function ProjectStep({
 }) {
   return (
     <div
-      className="bg-light-black py-4 px-6 rounded-xl relative lg:flex lg:flex-col lg:justify-between"
+      className="bg-light-black py-4 px-6 rounded-xl relative lg:flex lg:flex-col lg:justify-between hover:shadow-[0px_-2px_5px_-1px_#D7D1EF] transition-all duration-300"
       onMouseEnter={() => onHover(step.id)}
     >
       <p className="relative pl-2.5 text-light-gray  after:content-[''] after:absolute after:left-0 after:top-1/2 after:-translate-y-1/2 after:w-1 after:h-1 after:bg-green-500 after:rounded-full">

@@ -72,8 +72,6 @@ export default function ProjectSteps() {
             modules={[Pagination]}
             spaceBetween={50}
             slidesPerView={1}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
             pagination={{ clickable: true }}
           >
             {projectSteps.map((step) => (
