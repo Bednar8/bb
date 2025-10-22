@@ -14,7 +14,7 @@ export default function Button({
 	}
 	if (type === "light") {
 		return (
-			<button className="bg-light-gray text-dark px-8 py-3 cursor-pointer rounded-[100px]">
+			<button className="bg-light-gray text-dark px-8 py-3 cursor-pointer rounded-[100px] uppercase font-bold">
 				{children}
 			</button>
 		)
