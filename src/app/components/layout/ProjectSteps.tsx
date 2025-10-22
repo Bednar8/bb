@@ -13,11 +13,25 @@ const projectSteps = [
   {
     title: "ONBOARD",
     description: `<p>We create initial layout structures and visual concepts to define the website’s style and navigation flow.</p>
+    <br />
       <p> The approved concept is turned into a functional website with responsive design and interactive elements.</p>`,
     time: "5 - 7 DAYS",
   },
   {
     title: "WIREFRAMES & CONCEPTS",
+    description: `<p>We create initial layout structures and visual concepts to define the website’s style and navigation flow.</p>
+      <p> The approved concept is turned into a functional website with responsive design and interactive elements.</p>`,
+    time: "5 - 7 DAYS",
+  },
+  {
+    title: "DESIGN & DEVELOPMENT",
+    description: `<p>We create initial layout structures and visual concepts to define the website’s style and navigation flow.</p>
+    <br />
+      <p> The approved concept is turned into a functional website with responsive design and interactive elements.</p>`,
+    time: "5 - 7 DAYS",
+  },
+  {
+    title: "REVIEW & LAUNCH",
     description: `<p>We create initial layout structures and visual concepts to define the website’s style and navigation flow.</p>
       <p> The approved concept is turned into a functional website with responsive design and interactive elements.</p>`,
     time: "5 - 7 DAYS",
