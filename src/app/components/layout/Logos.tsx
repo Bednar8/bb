@@ -24,8 +24,8 @@ const techLogos = [
 export default function Logos() {
   return (
     <div
-      className="mt-9 lg:mt-24"
-      style={{ height: "200px", position: "relative", overflow: "hidden" }}
+      className="mt-9 lg:mt-24 pb-12 lg:pb-24"
+      style={{ position: "relative", overflow: "hidden" }}
     >
       <LogoLoop
         logos={techLogos}

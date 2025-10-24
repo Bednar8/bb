@@ -7,6 +7,7 @@ import Numbers from "./components/layout/Numbers";
 import Results from "./components/layout/Results";
 import Services from "./components/layout/Services";
 import Logos from "./components/layout/Logos";
+import Faq from "./components/layout/Faq";
 
 export default function Home() {
   return (
@@ -22,6 +23,9 @@ export default function Home() {
           <Services />
           <Logos />
         </div>
+      </div>
+      <div className="container">
+        <Faq />
       </div>
       <Form />
     </div>
